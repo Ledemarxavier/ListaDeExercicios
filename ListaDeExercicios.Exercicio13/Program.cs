@@ -11,13 +11,14 @@
                 Console.WriteLine("Digite um número para calcular o fatorial: ");
                 int n = Convert.ToInt32(Console.ReadLine());
                 int fatorial = 1;
-
-                for (int i = 1; i <= n; i++)
+                string calculo = "";
+                for (int i = n; i >= 1; i--)
                 {
                     fatorial *= i;
+                    calculo += (i != 1) ? $"{i} x " : $"{i}";
                 }
 
-                Console.WriteLine($"Fatorial de, {n} é {fatorial}");
+                Console.WriteLine($"\n{calculo} = {fatorial}");
 
                 Console.Write("\nDeseja calcular novamente? (S/N): ");
                 string opcao = Console.ReadLine().ToUpper();
