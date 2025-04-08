@@ -35,7 +35,7 @@
                 else
                     Console.WriteLine($"\n{numero} não é um número primo.");
 
-                Console.Write("\nDeseja calcular outra média ponderada? (S/N): ");
+                Console.Write("\nDeseja continuar? (S/N): ");
                 string opcao = Console.ReadLine().ToUpper();
 
                 if (opcao != "S")
